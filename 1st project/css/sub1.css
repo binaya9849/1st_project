@@ -1,0 +1,124 @@
+body
+{
+  margin:0;
+  padding:0;
+  background-color: #0a0a0a;
+}
+/*main body*/
+.mainbody
+{
+  width:80%;
+  float:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+.mainbody h3
+{
+  float:right;
+}
+/*gallery*/
+div.gallery 
+{
+  border: 1px solid #ccc;
+  margin: 25px 0px 0px 25px;
+}
+
+div.gallery:hover 
+{
+  border: 1px solid #777;
+}
+
+div.gallery img 
+{
+  width: 100%;
+  height: auto;
+}
+
+div.desc 
+{
+  padding: 15px;
+  text-align: center;
+}
+
+* 
+{
+  box-sizing: border-box;
+}
+
+.responsive 
+{
+  padding: 0 6px;
+  float: left;
+  width: 31.99999%;
+  height:25%;
+}
+.clearfix:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+/*responsive gallery*/
+@media only screen and (max-width: 700px) 
+{
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) 
+{
+  .responsive {
+    width: 100%;
+  }
+}
+/*responsive gallery end*/
+/*gallery end*/
+/* main body end*/
+  /*footer*/
+.footer 
+{
+   width: 100%;
+   background-color: black;
+   color: white;
+   border-radius:15px;
+   text-align:center;
+   margin-top:2%;
+   float:left;
+}
+.footer .left
+{
+  width:32.33%;
+  float:left;
+  margin-left:1%;
+}
+.footer .center
+{
+  width:32.33%;
+  float:left;
+  margin-left:1%;
+}
+.footer .right
+{
+  width:32.33%;
+  float:right;
+  margin-left:1%;
+}
+.footer button
+{
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/*footer finish*/
+h3
+{
+  text-align: center;
+}

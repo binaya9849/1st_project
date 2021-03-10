@@ -1,0 +1,119 @@
+body
+{
+  margin:0;
+  padding:0;
+  background-color: #0a0a0a;
+}
+/*main-body*/
+.main-body
+{
+	background-color: red;
+	height:500px;
+	width:80%;
+	float:center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.left-main
+{
+	height:100%;
+	float:left;
+	width:40%;
+	text-align: center;
+	background-color:#498bf5;
+}
+.left-main button
+{
+	padding:5px 10px 5px 10px;
+	border-radius: 8px;
+	width:60%;
+	font-size: 16px;
+}
+.facebook:hover
+{
+	color:white;
+	background-color: blue;
+}
+.twitter:hover
+{
+	color:white;
+	background-color: skyblue;
+}
+.google:hover
+{
+	color:white;
+	background-color: red;
+}
+.right-main
+{
+	height:100%;
+	float:right;
+	width:60%;
+	background-color:white;
+}
+.right-main input[type=text],input[type=password],input[type=number]
+{
+	border: none;
+	border-bottom: 2px solid black;
+	padding:2px 0px 0px 0px;
+	width:70%;
+}
+input[type=password]
+{
+	margin-top: 2%;
+}
+.right-main button
+{
+	background-color: #498bf5;
+	padding:5px 10px 5px 10px;
+	border-radius: 8px;
+	width:70%;
+	height:5%;
+}
+/*main-body end*/
+ /*footer*/
+.footer 
+{
+   width: 100%;
+   background-color: black;
+   color: white;
+   border-radius:15px;
+   text-align:center;
+   margin-top:2%;
+   float:left;
+}
+.footer .left
+{
+  width:32.33%;
+  float:left;
+  margin-left:1%;
+}
+.footer .center
+{
+  width:32.33%;
+  float:left;
+  margin-left:1%;
+}
+.footer .right
+{
+  width:32.33%;
+  float:right;
+  margin-left:1%;
+}
+.footer button
+{
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/*footer finish*/
+h3
+{
+  text-align: center;
+}
