@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Job Application Form</title>
+ <link rel="stylesheet" href="index.css">
+
+
+</head>
+<body>
+  <div class="container">
+    <h1>Job Application</h1>
+    <p class="lead">Please fill all the details below <span class="required"></span></p>
+    <form action="https://media2.edu.metropolia.fi/test/form-submission/" method="post">
+      <div class="form-grid">
+
+        <div class="field">
+          <label for="fullname">Full name <span class="required">*</span></label>
+          <input id="fullname" name="fullname" type="text" placeholder="e.g. Binaya Maharjan" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address <span class="required">*</span></label>
+          <input id="email" name="email" type="email" placeholder="you@gmail.com" required>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" placeholder="+358 12 345 6789">
+        </div>
+
+        <div class="field">
+          <label for="position">Position applied for <span class="required">*</span></label>
+          <select id="position" name="position" required>
+            <option value="">-- Select position --</option>
+            <option>System administrator</option>
+            <option>White Hat Hacker</option>
+            <option>UX Designer</option>
+            <option>Networking</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="salary">Expected monthly salary (EUR)</label>
+          <input id="salary" name="salary" type="number" placeholder="e.g. 3500">
+        </div>
+
+        <div class="field">
+          <label for="startdate">Available start date</label>
+          <input id="startdate" name="startdate" type="date">
+        </div>
+
+        <div class="field">
+          <label for="resume">Upload CV / Resume</label>
+          <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx">
+        </div>
+
+        <div class="field col-span-2">
+          <label for="experience">Work experience / Cover letter <span class="required">*</span></label>
+          <textarea id="experience" name="experience" placeholder="Describe your relevant experience, achievements, and motivation" required></textarea>
+        </div>
+
+        <div class="field col-span-2">
+          <div class="checkbox-row">
+            <input id="terms" name="terms" type="checkbox" required>
+            <label for="terms">I confirm that the information I have provided is accurate. <span class="required">*</span></label>
+          </div>
+        </div>
+
+        <div class="buttons col-span-2">
+          <button type="reset" class="btn btn-secondary" aria-label="Reset form">Reset</button>
+          <button type="submit" class="btn btn-primary" aria-label="Submit application">Submit application</button>
+        </div>
+
+      </div>
+    </form>
+
+  </div>
+</body>
+</html>
