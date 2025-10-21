@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arrays</title>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #673ab7;
+    font-family: 'Anonymous Pro', monospace;
+    color: #f1f1f1;
+}
+/* Cursor / typewriter */
+.cursor {
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgba(255,255,255,0.75);
+    width: 0ch; 
+}
+
+/* Animation */
+.animation {
+    animation: 
+        typewriter 6s steps(35, end) 0.3s 1 forwards,
+        blinkCursor 0.7s step-end infinite;
+}
+/* Typewriter keyframes */
+@keyframes typewriter {
+    from { width: 0ch; }
+    to   { width: 35ch; } 
+}
+/* Cursor blink */
+@keyframes blinkCursor {
+    0%, 100% { border-right-color: rgba(255,255,255,0.75); }
+    50%      { border-right-color: transparent; }
+}
+</style>
+</head>
+<body>
+    <p class="cursor animation">Hi there, Please check the console</p>
+    <script src="index.js"></script>
+</body>
+</html>
